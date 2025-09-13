@@ -1,4 +1,4 @@
 # Write your MySQL query statement below
-select a.teacher_id, count(distinct a.subject_id) as cnt
-from Teacher a
+select teacher_id, count(distinct subject_id) as cnt
+from Teacher 
 group by teacher_id;
