@@ -1,10 +1,10 @@
 class Solution {
 public:
     bool isPowerOfThree(int n) {
-        for(int i =0 ;i<20; i++){
-            int ans = pow(3,i);
-            if(ans == n) return true;
+        if(n<=0) return false;
+        while(n%3==0){
+            n/=3;
         }
-    return false;
+        return n==1;
     }
 };
