@@ -16,6 +16,10 @@ public:
             seen.insert(n);
             n = next(n);
         }
-        return n == 1;
+        if(n==1){
+            return true;
+        }
+        
+        return false;
     }
 };
