@@ -1,0 +1,15 @@
+class Solution {
+public:
+    int reverseBits(int n) {
+        unsigned int un = static_cast<unsigned int>(n);
+        unsigned int res= 0;
+
+        for(int i = 0; i<32; i++){
+            res <<=1;
+            res |= (un & 1);
+            un >>= 1;
+        }
+         return static_cast<int>(res);
+
+    }
+};
